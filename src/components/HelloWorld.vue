@@ -36,7 +36,7 @@ export default {
   props: {
     msg: String
   },
-  mounted(){
+  mounted () {
     window.document.documentElement.addEventListener('click', () => {
       throw Error('nihaobug')
     }, false)
