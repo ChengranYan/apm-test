@@ -6,7 +6,7 @@ import * as Sentry from '@sentry/browser'
 Vue.config.productionTip = false
 
 Sentry.init({
-  release: '2.0',
+  release: '3.0',
   dsn: 'https://55feca8d735d4f8d949359fab44c8cfb@sentry.io/1365248',
   integrations: [new Sentry.Integrations.Vue({
     Vue
