@@ -6,12 +6,10 @@ import * as Sentry from '@sentry/browser'
 Vue.config.productionTip = false
 
 Sentry.init({
-  release: 'test@1.0',
-  dsn: 'https://55feca8d735d4f8d949359fab44c8cfb@sentry.io/1365248',
-  integrations: [new Sentry.Integrations.Vue({
-    Vue
-  })]
+  dsn: 'https://e3f628257c9b41bab2f1a5949c2ea8f7@sentry.io/1370699',
+  integrations: [new Sentry.Integrations.Vue({ Vue })]
 })
+
 new Vue({
   router,
   render: h => h(App)
