@@ -2,11 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import * as Sentry from '@sentry/browser'
-
+import { version } from '@/../package.json'
+console.log(version)
 Vue.config.productionTip = false
-
 Sentry.init({
-  release: 'stage@4.25.0',
+  release: 'stage@4.29.0',
   dsn: 'https://b36419211dc245ffa2281c68a32d8760@sentry.io/1370707',
   integrations: [new Sentry.Integrations.Vue({ Vue })]
 })
