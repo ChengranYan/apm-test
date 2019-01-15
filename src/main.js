@@ -6,7 +6,7 @@ import { version } from '@/../package.json'
 
 Vue.config.productionTip = false
 Sentry.init({
-  release: version + 'stage@4.29.0',
+  release: version + '@stage',
   dsn: 'https://b36419211dc245ffa2281c68a32d8760@sentry.io/1370707',
   integrations: [new Sentry.Integrations.Vue({ Vue })]
 })
